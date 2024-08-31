@@ -92,7 +92,7 @@ namespace SmartShopManager
         List<Dictionary<string, object>> car = new List<Dictionary<string, object>>();
         private void btnADD_Click(object sender, EventArgs e)
         {
-            string selectedProd = cboProd.SelectedItem.ToString();
+            string selectedProd = cboProd.SelectedItem.ToString();//
             int cant = Convert.ToInt32(numericUpDown1.Value);
             int index = products.FindIndex(elem => elem["name"].Equals(selectedProd));
             int ultimoIndex = 0;
